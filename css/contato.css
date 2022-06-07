@@ -1,0 +1,1391 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Garamond;   
+}
+
+body{
+    background-color: rgb(245, 237, 237);
+    box-sizing: border-box;
+}
+
+#bt_menu{
+    display: none;
+}
+
+label{
+    display: none;
+}
+
+.colorBarra{
+    width: 100%;
+    height: 50px;
+    background-color: #353131;
+    color: white;
+    position: relative;
+}
+
+.imgLogo{
+    position: absolute;
+    top:50%;
+    left: 1%;
+    transform: translateY( -50%);
+    float: left;
+    width: 40px;  
+}
+
+.ulMenu{
+    list-style: none;
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY( -50%);  
+}
+
+li{
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #353131;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contato{
+    background-color: #433e3e;
+}
+
+li:hover{
+    background-color: #433e3e;
+    /* padding dá um efeito diferente */
+    /* padding: 5px; */  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Barra Contato */
+
+.segundoTitulo{
+    width: 100%;
+    position: relative; 
+}
+
+.segundoTitulo h1{
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: -1%;
+    background-color: #353131BB;
+    width: 100%;
+    height: 99px;
+    text-align: center;
+    border: 2px solid black ;
+    border-color: black  black black#353131BB;
+    padding-top: 10px;
+}
+
+.imagemDoSegundoTitulo{
+    background-image: url(../assets/kid3.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    width: 100%;
+    height: 110px; 
+}
+
+/* Contato */
+
+.divMapa{
+    width: 700px;
+    height: 400px;
+    margin: auto;
+}
+
+.infContato{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.end{
+    color: #565252;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.mapa{
+    width: 700px;
+    height: 400px; 
+}
+
+/* Parte de Baixo */
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #353131;
+    color: white;
+    position: relative; 
+    margin-top: 140px;
+}
+
+.imgRodape{
+    text-align: center;
+    width: 160px;
+    font-size: 12px;
+
+    /* Tb pode ser utilizado float para posicionar a imagem */
+    /* float: right;
+    margin-right: 100PX;
+    margin-top: 120PX; */
+
+    position: absolute;
+    right: 100px;
+    top:115px ;
+      
+}
+
+.imgRodape2{
+    width: 50px;
+}
+
+.insta{
+    background-color: #353131;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #353131;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    top: 140px;
+    left: 100px; 
+}
+
+.insta:hover{
+    background-color: #726e6e;
+}
+
+.instagram{
+    width: 40px;
+    position: absolute;
+    top:  -1px;
+    left: -4px;  
+}
+
+.whats{
+    background-color: #353131;
+    width: 40px;
+    height: 40px;
+    border: 7px solid #353131;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 140px;
+    left: 220px;  
+}
+
+.whats:hover{
+    background-color: #726e6e;
+}
+
+.whatsApp{
+    width: 45px;
+    position: absolute;
+    top:  -10px;
+    left: -7px;  
+}
+
+.privacidade{
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 180px;
+    width: 230px;
+}
+
+.priv:hover{
+    color: #726e6e;
+}
+
+
+
+@media screen and (max-width: 913px){
+
+    header{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    label{
+        display: inline-block;
+        text-align: center;
+        margin-left: 45.5%;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        
+    }
+
+    label[for="bt_menu"]{
+        padding: 5px;
+        background-color: #353131;
+        color: white;
+        font-family: arial;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #252525;
+        border-radius: 10px;   
+    }
+
+    .colorBarra{
+        visibility: hidden;
+    }
+
+    #bt_menu:checked ~ .colorBarra{
+        visibility: visible;
+    } 
+
+    .colorBarra{
+        width: 60%;
+        height: 200px;
+        background-color: #353131;
+        color: white;
+        position: absolute;
+        top: 67px;
+        left: 18.3%;
+        margin: auto;
+        border: 2px solid #252525;
+        border-radius: 10px;
+    }
+
+    .imgLogo{
+        position: absolute;
+        top:0%;
+        left: 50%;
+        transform: translateX( -50%);
+        padding: 5px;
+        float: left;
+        width: 40px;  
+    } 
+    
+    .ulMenu{
+        list-style: none;
+        float: none;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX( -50%);
+        width: 300px;
+        padding-top: 10px;   
+    }
+    
+    li{
+        float: none;
+        margin: 5px ;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid #252525;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;  
+    }
+    
+    li:hover{
+        background-color: #433e3e;
+        color: black;
+        border: 2px solid black; 
+    }
+
+    /* Barra Contato */
+
+    .segundoTitulo{
+      width: 100%;
+      position: relative; 
+    }
+
+    .segundoTitulo h1{
+        font-size: 80px;
+        color: white;
+        position: absolute;
+        top: -1%;
+        background-color: #353131BB;
+        width: 100%;
+        height: 99px;
+        text-align: center;
+        border: 2px solid black ;
+        border-color: black  black black#353131BB;
+        padding-top: 10px;
+    }
+
+    .imagemDoSegundoTitulo{
+        background-image: url(../assets/kid3.jpg);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        width: 100%;
+        height: 110px; 
+    }
+   
+    /* Contato */
+
+    .divMapa{
+        width: 700px;
+        height: 820px;
+        margin: auto;
+    }
+
+    .infContato{
+        text-align: center;
+        font-size: 37px;
+        font-weight: bold;
+        margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .end{
+        color: #565252;
+        margin-top: 30px;
+        margin-bottom: 30px; 
+    }
+
+    .mapa{
+        width: 700px;
+        height: 600px; 
+    }
+
+    .insta{
+        position: absolute;
+        top: 120px;
+        left: 49%;  
+    }
+    
+    .whats{
+        position: absolute;
+        top: 120px;
+        left: 40%; 
+    }
+    
+    .imgRodape{
+        text-align: center;
+        width: 160px;
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:20px ;   
+    }
+
+}
+
+@media screen and (max-width: 825px){
+
+    header{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    label{
+        display: inline-block;
+        text-align: center;
+        margin-left: 45.5%;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        
+    }
+
+    label[for="bt_menu"]{
+        padding: 5px;
+        background-color: #353131;
+        color: white;
+        font-family: arial;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #252525;
+        border-radius: 10px;   
+    }
+
+    .colorBarra{
+        visibility: hidden;
+    }
+
+    #bt_menu:checked ~ .colorBarra{
+        visibility: visible;
+    } 
+
+    .colorBarra{
+        width: 60%;
+        height: 200px;
+        background-color: #353131;
+        color: white;
+        position: absolute;
+        top: 67px;
+        left: 18.5%;
+        margin: auto;
+        border: 2px solid #252525;
+        border-radius: 10px;
+    }
+
+    .imgLogo{
+        position: absolute;
+        top:0%;
+        left: 50%;
+        transform: translateX( -50%);
+        padding: 5px;
+        float: left;
+        width: 40px;  
+    } 
+    
+    .ulMenu{
+        list-style: none;
+        float: none;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX( -50%);
+        width: 300px;
+        padding-top: 10px;   
+    }
+    
+    li{
+        float: none;
+        margin: 5px ;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid #252525;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;  
+    }
+    
+    li:hover{
+        background-color: #433e3e;
+        color: black;
+        border: 2px solid black; 
+    }
+
+    /* Barra Contato */
+
+    .segundoTitulo{
+      width: 100%;
+      position: relative; 
+    }
+
+    .segundoTitulo h1{
+        font-size: 80px;
+        color: white;
+        position: absolute;
+        top: -1%;
+        background-color: #353131BB;
+        width: 100%;
+        height: 99px;
+        text-align: center;
+        border: 2px solid black ;
+        border-color: black  black black#353131BB;
+        padding-top: 10px;
+    }
+
+    .imagemDoSegundoTitulo{
+        background-image: url(../assets/kid3.jpg);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        width: 100%;
+        height: 110px; 
+    }
+   
+    /* Contato */
+
+    .divMapa{
+        width: 700px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .infContato{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 80px;
+    }
+
+    .end{
+        color: #565252;
+        margin-top: 30px;
+        margin-bottom: 30px; 
+    }
+
+    .mapa{
+        width: 700px;
+        height: 400px; 
+    }
+
+    .insta{
+        position: absolute;
+        top: 120px;
+        left: 48%;  
+    }
+    
+    .whats{
+        position: absolute;
+        top: 120px;
+        left: 40%; 
+    }
+    
+    .imgRodape{
+        text-align: center;
+        width: 160px;
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:20px ;   
+    }
+
+}
+
+@media screen and (max-width: 545px){
+
+    .colorBarra{
+        width: 80%;
+        height: 200px;
+        background-color: #353131;
+        color: white;
+        position: absolute;
+        top: 67px;
+        left: 9.8%;
+        margin: auto;
+        border: 2px solid #252525;
+        border-radius: 10px;
+    }
+
+    .imgLogo{
+        position: absolute;
+        top:0%;
+        left: 50%;
+        transform: translateX( -50%);
+        padding: 5px;
+        float: left;
+        width: 40px;  
+    } 
+    
+    .ulMenu{
+        list-style: none;
+        float: none;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX( -50%);
+        width: 300px;
+        padding-top: 10px;   
+    }
+    
+    li{
+        float: none;
+        margin: 5px ;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid #252525;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;  
+    }
+    
+    li:hover{
+        background-color: #433e3e;
+        color: black;
+        border: 2px solid black; 
+    }
+
+    /* Barra Contato */
+
+    .segundoTitulo{
+        width: 100%;
+        position: relative; 
+    }
+  
+    .segundoTitulo h1{
+        font-size: 80px;
+        color: white;
+        position: absolute;
+        top: -1%;
+        background-color: #353131BB;
+        width: 100%;
+        height: 99px;
+        text-align: center;
+        border: 2px solid black ;
+        border-color: black  black black#353131BB;
+        padding-top: 10px;
+    }
+  
+    .imagemDoSegundoTitulo{
+        background-image: url(../assets/kid3.jpg);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        width: 100%;
+        height: 110px; 
+    }
+
+    /* Contato */
+
+    .divMapa{
+        width: 100%;
+        height: 350px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .infContato{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 150px;
+    }
+
+    .end{
+        color: #565252;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+
+    .mapa{
+        width: 370px;
+        height: 250px; 
+    }
+
+    /* Parte de baixo */
+
+    .insta{
+        position: absolute;
+        top: 120px;
+        left: 46%;  
+    }
+    
+    .whats{
+        position: absolute;
+        top: 120px;
+        left: 35%; 
+    }
+    
+    .imgRodape{
+        text-align: center;
+        width: 160px;
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:20px ;   
+    }
+}
+
+@media screen and (max-width: 415px){
+
+    .colorBarra{
+        width: 80%;
+        height: 200px;
+        background-color: #353131;
+        color: white;
+        position: absolute;
+        top: 67px;
+        left: 11.8%;
+        margin: auto;
+        border: 2px solid #252525;
+        border-radius: 10px;
+    }
+
+    .imgLogo{
+        position: absolute;
+        top:0%;
+        left: 50%;
+        transform: translateX( -50%);
+        padding: 5px;
+        float: left;
+        width: 40px;  
+    } 
+    
+    .ulMenu{
+        list-style: none;
+        float: none;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX( -50%);
+        width: 300px;
+        padding-top: 10px;   
+    }
+    
+    li{
+        float: none;
+        margin: 5px ;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid #252525;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;  
+    }
+    
+    li:hover{
+        background-color: #433e3e;
+        color: black;
+        border: 2px solid black; 
+    }
+
+    /* Barra Contato */
+
+    .segundoTitulo{
+        width: 100%;
+        position: relative; 
+    }
+  
+    .segundoTitulo h1{
+        font-size: 80px;
+        color: white;
+        position: absolute;
+        top: -1%;
+        background-color: #353131BB;
+        width: 100%;
+        height: 99px;
+        text-align: center;
+        border: 2px solid black ;
+        border-color: black  black black#353131BB;
+        padding-top: 10px;
+    }
+  
+    .imagemDoSegundoTitulo{
+        background-image: url(../assets/kid3.jpg);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        width: 100%;
+        height: 110px; 
+    }
+
+    /* Contato */
+
+    .divMapa{
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .infContato{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 150px;
+    }
+
+    .end{
+        color: #565252;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+
+    .mapa{
+        width: 370px;
+        height: 250px; 
+    }
+
+
+    /* Parte de baixo */
+
+    .insta{
+        position: absolute;
+        top: 120px;
+        left: 46%;  
+    }
+    
+    .whats{
+        position: absolute;
+        top: 120px;
+        left: 30%; 
+    }
+    
+    .imgRodape{
+        text-align: center;
+        width: 160px;
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:20px ;   
+    }
+}
+
+@media screen and (max-width: 413px){
+
+    .colorBarra{
+        width: 80%;
+        height: 200px;
+        background-color: #353131;
+        color: white;
+        position: absolute;
+        top: 67px;
+        left: 11.8%;
+        margin: auto;
+        border: 2px solid #252525;
+        border-radius: 10px;
+    }
+
+    .imgLogo{
+        position: absolute;
+        top:0%;
+        left: 50%;
+        transform: translateX( -50%);
+        padding: 5px;
+        float: left;
+        width: 40px;  
+    } 
+    
+    .ulMenu{
+        list-style: none;
+        float: none;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX( -50%);
+        width: 300px;
+        padding-top: 10px;   
+    }
+    
+    li{
+        float: none;
+        margin: 5px ;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid #252525;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;  
+    }
+    
+    li:hover{
+        background-color: #433e3e;
+        color: black;
+        border: 2px solid black; 
+    }
+
+    /* Barra Contato */
+
+    .segundoTitulo{
+        width: 100%;
+        position: relative; 
+    }
+  
+    .segundoTitulo h1{
+        font-size: 80px;
+        color: white;
+        position: absolute;
+        top: -1%;
+        background-color: #353131BB;
+        width: 100%;
+        height: 99px;
+        text-align: center;
+        border: 2px solid black ;
+        border-color: black  black black#353131BB;
+        padding-top: 10px;
+    }
+  
+    .imagemDoSegundoTitulo{
+        background-image: url(../assets/kid3.jpg);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        width: 100%;
+        height: 110px; 
+    }
+
+    /* Contato */
+
+    .divMapa{
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .infContato{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 150px;
+        margin-left: 05px;
+        margin-right: 05px;
+    }
+
+    .end{
+        color: #565252;
+        margin-top: 30px;
+        margin-bottom: 30px;   
+    }
+
+    .mapa{
+        width: 370px;
+        height: 250px; 
+    }
+
+    /* Parte de baixo */
+
+    .insta{
+        position: absolute;
+        top: 120px;
+        left: 46%;  
+    }
+    
+    .whats{
+        position: absolute;
+        top: 120px;
+        left: 30%; 
+    }
+    
+    .imgRodape{
+        text-align: center;
+        width: 160px;
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:20px ;   
+    }
+}
+
+@media screen and (max-width: 376px){
+
+    .colorBarra{
+        width: 80%;
+        height: 200px;
+        background-color: #353131;
+        color: white;
+        position: absolute;
+        top: 67px;
+        left: 11.8%;
+        margin: auto;
+        border: 2px solid #252525;
+        border-radius: 10px;
+    }
+
+    .imgLogo{
+        position: absolute;
+        top:0%;
+        left: 50%;
+        transform: translateX( -50%);
+        padding: 5px;
+        float: left;
+        width: 40px;  
+    } 
+    
+    .ulMenu{
+        list-style: none;
+        float: none;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX( -50%);
+        width: 300px;
+        padding-top: 10px;   
+    }
+    
+    li{
+        float: none;
+        margin: 5px ;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid #252525;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;  
+    }
+    
+    li:hover{
+        background-color: #433e3e;
+        color: black;
+        border: 2px solid black; 
+    }
+
+    /* Barra Contato */
+
+    .segundoTitulo{
+        width: 100%;
+        position: relative; 
+    }
+  
+    .segundoTitulo h1{
+        font-size: 80px;
+        color: white;
+        position: absolute;
+        top: -1%;
+        background-color: #353131BB;
+        width: 100%;
+        height: 99px;
+        text-align: center;
+        border: 2px solid black ;
+        border-color: black  black black#353131BB;
+        padding-top: 10px;
+    }
+  
+    .imagemDoSegundoTitulo{
+        background-image: url(../assets/kid3.jpg);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        width: 100%;
+        height: 110px; 
+    }
+
+    /* Contato */
+
+    .divMapa{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .infContato{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 150px;
+    }
+
+    .end{
+        color: #565252;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+
+    .mapa{
+        width: 350px;
+        height: 200px; 
+    }
+
+    /* Parte de baixo */
+
+    .insta{
+        position: absolute;
+        top: 120px;
+        left: 46%;  
+    }
+    
+    .whats{
+        position: absolute;
+        top: 120px;
+        left: 27%; 
+    }
+    
+    .imgRodape{
+        text-align: center;
+        width: 160px;
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:20px ;   
+    }
+
+}
+
+@media screen and (max-width: 360px){
+
+    .colorBarra{
+        width: 90%;
+        height: 200px;
+        background-color: #353131;
+        color: white;
+        position: absolute;
+        top: 67px;
+        left: 06.8%;
+        margin: auto;
+        border: 2px solid #252525;
+        border-radius: 10px;
+    }
+
+    .imgLogo{
+        position: absolute;
+        top:0%;
+        left: 50%;
+        transform: translateX( -50%);
+        padding: 5px;
+        float: left;
+        width: 40px;  
+    } 
+    
+    .ulMenu{
+        list-style: none;
+        float: none;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX( -50%);
+        width: 300px;
+        padding-top: 10px;   
+    }
+    
+    li{
+        float: none;
+        margin: 5px ;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid #252525;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;  
+    }
+    
+    li:hover{
+        background-color: #433e3e;
+        color: black;
+        border: 2px solid black; 
+    }
+
+    /* Barra Contato */
+
+    .segundoTitulo{
+        width: 100%;
+        position: relative; 
+    }
+  
+    .segundoTitulo h1{
+        font-size: 80px;
+        color: white;
+        position: absolute;
+        top: -1%;
+        background-color: #353131BB;
+        width: 100%;
+        height: 99px;
+        text-align: center;
+        border: 2px solid black ;
+        border-color: black  black black#353131BB;
+        padding-top: 10px;
+    }
+  
+    .imagemDoSegundoTitulo{
+        background-image: url(../assets/kid3.jpg);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        width: 100%;
+        height: 110px; 
+    }
+
+    /* Contato */
+
+    .divMapa{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .infContato{
+        text-align: center;
+        font-size: 23px;
+        font-weight: bold;
+        margin-top: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .end{
+        color: #565252;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .mapa{
+        width: 350px;
+        height: 200px; 
+    }
+
+    /* Parte de baixo */
+    .insta{
+        position: absolute;
+        top: 120px;
+        left: 46%;  
+    }
+    
+    .whats{
+        position: absolute;
+        top: 120px;
+        left: 27%; 
+    }
+    
+    .imgRodape{
+        text-align: center;
+        width: 160px;
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:20px ;   
+    }
+
+}
+
+@media screen and (max-width: 290px){
+
+    header{
+        position: absolute;
+        right: 10px;
+    }
+
+    .colorBarra{
+        width: 90%;
+        height: 200px;
+        background-color: #353131;
+        color: white;
+        position: absolute;
+        top: 67px;
+        left: 08.9%;
+        margin: auto;
+        border: 2px solid #252525;
+        border-radius: 10px;
+    }
+
+    .imgLogo{
+        position: absolute;
+        top:0%;
+        left: 50%;
+        transform: translateX( -50%);
+        padding: 5px;
+        float: left;
+        width: 40px;  
+    } 
+    
+    .ulMenu{
+        list-style: none;
+        float: none;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX( -50%);
+        width: 250px;
+        padding-top: 10px;   
+    }
+    
+    li{
+        float: none;
+        margin: 5px ;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid #252525;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;  
+    }
+    
+    li:hover{
+        background-color: #433e3e;
+        color: black;
+        border: 2px solid black; 
+    }
+
+    /* Barra Contato */
+
+    .segundoTitulo{
+        width: 100%;
+        position: relative; 
+    }
+  
+    .segundoTitulo h1{
+        font-size: 80px;
+        color: white;
+        position: absolute;
+        top: -1%;
+        background-color: #353131BB;
+        width: 100%;
+        height: 99px;
+        text-align: center;
+        border: 2px solid black ;
+        border-color: black  black black#353131BB;
+        padding-top: 10px;
+    }
+  
+    .imagemDoSegundoTitulo{
+        background-image: url(../assets/kid3.jpg);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+        width: 100%;
+        height: 110px; 
+    }
+
+    /* Contato */
+
+    .divMapa{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .infContato{
+        text-align: center;
+        font-size: 23px;
+        font-weight: bold;
+        margin-top: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .end{
+        color: #565252;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .mapa{
+        width: 250px;
+        height: 200px; 
+    }
+
+    /* Parte de baixo */
+    .insta{
+        position: absolute;
+        top: 120px;
+        left: 46%;  
+    }
+    
+    .whats{
+        position: absolute;
+        top: 120px;
+        left: 20%; 
+    }
+    
+    .imgRodape{
+        text-align: center;
+        width: 160px;
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:20px ;   
+    }
+
+}
+
+
